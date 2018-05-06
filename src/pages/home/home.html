@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-buttons left>
+      <button ion-button menuToggle>
+        <ion-icon name="menu" id="menuIcon"></ion-icon>
+      </button>
+    </ion-buttons>
+    <ion-title (click)="changePage(booksinfoPage)">
+        <img alt="" src="./assets/imgs/titlelogo.jpg" width="44px">
+      <span id="apptitle">BMB</span>
+    </ion-title>
+    <ion-buttons right>
+      <button ion-button (click)="changePage(postbookPage)">
+          <ion-icon name="add-circle" id="postIcon" ></ion-icon>
+      </button>
+    </ion-buttons>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding >
+    <ion-nav  [root]="rootPage"></ion-nav>
+</ion-content>
